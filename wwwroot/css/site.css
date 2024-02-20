@@ -26,15 +26,19 @@ html {
 }
 
 #carouselExampleSlidesOnly{
-    height: 300px;
+    height: 400px;
 }
-footer{
-    background-color: #0d243d;
+
+footer {
+    background-color: #ff1448;
     height: 230px;
 }
+
 header{
     z-index: 1000;
 }
+
 .dishCard{
     height: 250px;
+    width: 350px;
 }
