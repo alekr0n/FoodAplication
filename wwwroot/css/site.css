@@ -31,7 +31,7 @@ html {
 
 footer {
     background-color: #ff1448;
-    height: 230px;
+    
 }
 
 header{
@@ -41,4 +41,16 @@ header{
 .dishCard{
     height: 250px;
     width: 350px;
+}
+
+.fa-instagram{
+    color: #fcaf45;
+}
+
+.fa-square-facebook {
+    color: #3b5998;
+}
+
+.fa-envelope {
+    color: #4285f4;
 }
