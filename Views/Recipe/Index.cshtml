@@ -2,7 +2,7 @@
     ViewData["Title"] = "Recipe";
 }
 <div class="container-fluid">
-    <div class="row">
+    <div class="row mb-4">
         <div class="col-12">
             @Html.Partial("_SearchBar")
         </div>
@@ -10,13 +10,9 @@
     <div class="row">
         <div class="col-2">
             <div class="shadow rounded">
-                <div class="border-bottom p-2">
+                <div class="border-bottom border-3 p-2">
                     <h4 class="text-pink text-center fst-italic">Recipes</h4>
-                    <ul class="list-group-flush">
-                        <li class="recipe-item list-group-item">
-
-                        </li>
-                    </ul>
+                    @Html.Partial("_SideMenu")
                 </div>
             </div>
         </div>

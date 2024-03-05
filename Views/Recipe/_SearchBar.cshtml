@@ -2,8 +2,8 @@
 	<div class="p-2">
 		<form autocomplete="off">
 			<div class="mb-2 row">
-				<div class="col-9 text-center">
-					<input type="text" placeholder="Search Recipe" class="form-control" name="recipe" />
+				<div class="col-9 text-center ui-widget">
+					<input type="text" id="tags" placeholder="Search Recipe" class="form-control" name="recipe" />
 				</div>
 				<div class="col-3">
 					<button type="submit" class="btn btn-sm btn-success p-2">Search</button>
@@ -12,3 +12,19 @@
 		</form>
 	</div>
 </div>
+
+<script>
+    $(function () {
+        var availableTags = [
+			"mushrooms", "pumpkin", "tomato", "garlic", "saffron", "green bean", "raspberry", "pie", "cake",
+			"sausage", "tacos", "kebab", "poutine", "seafood", "chips", "fries", "masala", "chicken", 
+			"chocolate", "tofu", "sushi", "ice cream", "apple", "apricot", "avocado", "banana", "blackberry",
+			"blackcurrant", "blueberry", "boysenberry", "cherry", "melon", "nectarine", "orange", "papaya",
+			"passion fruit", "peach", "pear", "pineapple", "plum", "pasta", "popcorn", "lobster", "steak",
+			"bbq", "pudding", "hamburger"
+        ];
+        $("#tags").autocomplete({
+            source: availableTags
+        });
+    });
+</script>
