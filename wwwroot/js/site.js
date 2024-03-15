@@ -12,3 +12,16 @@ function GetRecipes(recipeName) {
     let result = await resp.json();
     console.log(result);
 }
+
+function showRecipe(recipes, id) {
+    $.ajax({
+        contentType: "application/json; charset=utf-8",
+        dataType: 'html',
+        type: 'POST',
+        url: '/Recipe/GetRecipeCard',
+        data: JSON.stringify(recipes),
+        success: function (htmlResult) {
+            $('#' + id).html(htmlResult);
+        }
+    });
+}
