@@ -12,7 +12,7 @@ namespace FoodAplication.Controllers
         [HttpPost]
         public IActionResult GetRecipeCard([FromBody] List<Recipe> recipes)
         {
-            return PartialView("", recipes);
+            return PartialView("_RecipeCard", recipes);
         }
     }
 }
